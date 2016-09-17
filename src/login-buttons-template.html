@@ -4,7 +4,7 @@
       {{ displayName() }} ▾
     </span>
     <span *ngIf="!isLoggedIn">
-      Login ▾
+      登录
     </span>
   </div>
   <div class="content-container" [hidden]="!isDropdownOpen">
@@ -49,7 +49,7 @@
         <!--<a [hidden]="isPasswordRecovery" class="recover-button"-->
         <!--(click)="isPasswordRecovery=true; isSignup=false; resetErrors();" href="#">Recover Password</a>-->
         <a [hidden]="!isSignup && !isPasswordRecovery" class="login-button"
-           (click)="isPasswordRecovery=false; isSignup=false; resetErrors();">Back to Login</a>
+           (click)="isPasswordRecovery=false; isSignup=false; resetErrors();">返回登录</a>
       </form>
     </div>
   </div>
